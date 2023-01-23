@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link rel="stylesheet" href="tables.css" />
+    <link rel="modulepreload" href="users.js" />
+    <script type="module" src="users.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Users</h1>
+    </header>
+    <main>
+      <div id="new-user-div">
+        <button id="new-user-btn">Add New User</button>
+      </div>
+      <div id="table-div">
+        <table>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Date Created</th>
+              <th>Edit User</th>
+              <th>Lock User</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <span id="msg"></span>
+      </div>
+      <div id="pagination-div">
+        <button id="first-btn">First</button>
+        <button id="prev-btn">Prev</button>
+        <span id="page-num-span">Page #</span>
+        <button id="next-btn">Next</button>
+        <button id="last-btn">Last</button>
+      </div>
+    </main>
+  </body>
+</html>
