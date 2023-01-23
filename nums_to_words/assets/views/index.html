@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arabic Number Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="modulepreload" href="main.js" />
+    <script type="module" src="main.js"></script>
+    <link rel="prefetch" href="red-panda.mp4" />
+    <link rel="prefetch" href="manta.mp4" />
+    <link rel="prefetch" href="cranes.mp4" />
+  </head>
+  <body>
+    <video muted autoplay loop>
+      <source src="turtle.mp4" type="video/mp4" />
+    </video>
+    <main>
+      <div id="header-div">
+        <h1>Arabic Number Converter</h1>
+        <p id="descr">Convert Arabic numbers to English words.</p>
+      </div>
+      <div id="input-div">
+        <input
+          id="num-input"
+          type="text"
+          placeholder="Enter a number..."
+          maxlength="67"
+          autofocus
+        />
+        <div id="gray-bgr-div">
+          <p id="words">
+            Please, use Arabic numbers only ("0-9").<br />
+            You may use the plus ("+") and minus ("-") signs as the first
+            character of your input.<br />
+            Use dot (".") as decimal separator.
+          </p>
+        </div>
+        <div id="btn-div">
+          <button id="play-btn" class="play" data-icon="u"></button>
+          <button id="mood-btn">Mood</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

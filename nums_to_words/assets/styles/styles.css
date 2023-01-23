@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 0;
+  color: #f1f1f1;
+}
+
+#header-div {
+  height: 20%;
+}
+
+h1 {
+  font-size: 10vh;
+  padding: 0 20px;
+}
+
+#descr {
+  font-size: 4vh;
+}
+
+#words {
+  font-size: 3.3vh;
+  padding: 20px;
+}
+
+#input-div {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#num-input {
+  width: 90%;
+  height: 8vh;
+  padding: 0 40px;
+  border-radius: 50px;
+  border: solid 1px lightgray;
+  font-size: 4vh;
+  color: #414141;
+}
+
+#gray-bgr-div {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 120px;
+  height: 5.5vh;
+  margin: 5px;
+  border-radius: 3px;
+  border: solid 1px lightgray;
+  font-size: 3vh;
+  color: #414141;
+  background-color: white;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "HeydingsControlsRegular";
+  src: url("heydings_controls-webfont.eot");
+  src: url("heydings_controls-webfont.eot?#iefix") format("embedded-opentype"),
+    url("heydings_controls-webfont.woff") format("woff"),
+    url("heydings_controls-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#play-btn:before {
+  font-family: HeydingsControlsRegular;
+  content: attr(data-icon);
+}
+
+@media screen and (max-width: 1300px) {
+  h1 {
+    font-size: 7vh;
+  }
+
+  #descr {
+    font-size: 3.5vh;
+  }
+
+  #words {
+    font-size: 2.9vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 6vh;
+  }
+
+  #descr {
+    font-size: 2.7vh;
+  }
+
+  #words {
+    font-size: 2.1vh;
+  }
+}
